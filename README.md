@@ -125,7 +125,7 @@ Box Shadow System - Consistent depth and elevation
 
 📁 Project Structure
 text
-propAIty-web/
+`propAIty-web/
 │
 ├── 📄 index.html                  # Landing page
 ├── 📄 signup.html                # Agent/landlord registration
@@ -168,7 +168,8 @@ propAIty-web/
 │       └── 📄 admin-navbar.js  # Admin navigation
 │
 └── 📁 utils/
-    └── 📄 constants.js         # Configuration values
+    └── 📄 constants.js         # Configuration values`
+
 💻 Installation & Setup
 Prerequisites
 Modern web browser (Chrome, Firefox, Safari, Edge)
