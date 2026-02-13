@@ -1,10 +1,10 @@
-🏠 propAIty.io
+# 🏠 propAIty.io
 
 AI-Powered Real Estate Marketplace
 
 📋 Table of Contents
 
-#Overview
+Overview
 
 Vision & Mission
 
@@ -35,6 +35,7 @@ License
 Contact
 
 🎯 Overview
+
 propAIty.io is a revolutionary AI-powered real estate marketplace that replaces fragmented property tools with one unified platform. We accelerate buying, selling, leasing, and short-let transactions through intelligent matching and automation.
 
 The Problem: Real estate professionals juggle multiple tools for listings, lead generation, communication, and transaction management. This fragmentation leads to inefficiency, missed opportunities, and wasted time.
@@ -42,6 +43,7 @@ The Problem: Real estate professionals juggle multiple tools for listings, lead 
 Our Solution: A single, intelligent platform powered by artificial intelligence that understands natural language, matches properties with precision, and automates workflows—all in one place.
 
 🚀 Vision & Mission
+
 Vision: To become the global standard for AI-driven real estate transactions, making property discovery and management as simple as having a conversation.
 
 Mission: Eliminate friction in real estate transactions by leveraging artificial intelligence to create perfect matches between buyers, sellers, landlords, and tenants.
@@ -57,7 +59,9 @@ Core Values:
 👥 Community Focus - Building a network of verified professionals
 
 ✨ Key Features
+
 For Agents & Brokers
+
 AI Property Matching - Intelligent algorithms match properties with perfect buyers
 
 Lead Generation - Receive pre-qualified, interested leads only
@@ -69,6 +73,7 @@ Quick Property Upload - List properties in minutes with smart forms
 Transaction Management - Track deals from offer to closing
 
 For Landlords & Developers
+
 Tenant Screening - Automated verification and matching
 
 Portfolio Management - Track multiple properties in one view
@@ -78,6 +83,7 @@ Market Intelligence - AI-powered pricing recommendations
 Short-let Optimization - Maximize occupancy and revenue
 
 For Buyers & Tenants
+
 Natural Language Search - Describe what you want in plain English
 
 Voice Search - Speak your requirements
@@ -87,6 +93,7 @@ Personalized Recommendations - "Why recommended" explanations
 Verified Agents - Trustworthy, rated professionals
 
 Platform Features
+
 ✅ No Subscription Lock-in - Pay only for results
 
 ✅ Pay-per-lead Model - Transparent, performance-based pricing
@@ -98,6 +105,7 @@ Platform Features
 ✅ Responsive Design - Works on desktop, tablet, and mobile
 
 🛠️ Tech Stack
+
 Frontend
 Technology	Purpose
 HTML5	Semantic markup structure
@@ -112,11 +120,12 @@ Mobile-First Design - Responsive from the ground up
 
 Component-Based - Reusable navbar, footer, and UI elements
 
-Modular CSS - Separated into main, layout, components
+Modular CSS - Separated into main, layout, and components
 
 Progressive Enhancement - Works on all browsers
 
 Design System
+
 CSS Custom Properties - Dynamic theming with variables
 
 Flexbox & Grid - Modern layout techniques
