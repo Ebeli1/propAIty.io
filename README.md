@@ -125,7 +125,7 @@ Box Shadow System - Consistent depth and elevation
 
 📁 Project Structure
 
-`propAIty-web/
+propAIty-web/
 │
 
 ├── 📄 index.html                  # Landing page
@@ -199,8 +199,7 @@ Box Shadow System - Consistent depth and elevation
 │       └── 📄 admin-navbar.js  # Admin navigation
 │
 └── 📁 utils/
-
-    └── 📄 constants.js         # Configuration values`
+    └── 📄 constants.js         # Configuration values
 
 💻 Installation & Setup
 
