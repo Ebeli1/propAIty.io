@@ -13,8 +13,8 @@ function loadNavbar() {
             <nav class="container flex-between py-4">
                 <!-- Logo -->
                 <a href="/" class="logo flex items-center gap-2">
-                    <i class="fas fa-robot text-2xl" style="color: var(--primary-color);"></i>
-                    <span class="text-xl font-bold">propAIty.io</span>
+                    <i class="fas fa-robot" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                    <span class="logo-text">propAIty.io</span>
                 </a>
                 
                 <!-- Desktop Navigation -->
@@ -36,14 +36,14 @@ function loadNavbar() {
                     </div>
                 </div>
                 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn hidden">
+                <!-- Mobile Menu Button - ALWAYS VISIBLE ON MOBILE -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
             
             <!-- Mobile Menu (Hidden by default) -->
-            <div class="mobile-menu hidden">
+            <div class="mobile-menu" id="mobileMenu">
                 <div class="mobile-menu-content">
                     <a href="index.html#how-it-works" class="mobile-link" data-section="how-it-works">How It Works</a>
                     <a href="index.html#pricing" class="mobile-link" data-section="pricing">Pricing</a>
@@ -63,6 +63,43 @@ function loadNavbar() {
                 position: sticky;
                 top: 0;
                 z-index: 1000;
+                width: 100%;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .flex-between {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .py-4 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Logo */
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                color: var(--dark-color);
+            }
+            
+            .logo-text {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: var(--dark-color);
+            }
+            
+            .logo i {
+                color: var(--primary-color);
             }
             
             /* Desktop Navigation Layout */
@@ -74,6 +111,7 @@ function loadNavbar() {
             .nav-main-links {
                 display: flex;
                 align-items: center;
+                gap: 8px;
             }
             
             .nav-link {
@@ -84,7 +122,7 @@ function loadNavbar() {
                 transition: var(--transition);
                 font-size: 1rem;
                 text-decoration: none;
-                margin: 0 8px;
+                margin: 0 4px;
             }
             
             .nav-link:hover {
@@ -120,6 +158,22 @@ function loadNavbar() {
                 gap: 12px;
             }
             
+            /* Mobile Menu Button - ALWAYS VISIBLE ON MOBILE VIA MEDIA QUERY */
+            .mobile-menu-btn {
+                background: none;
+                border: none;
+                font-size: 1.8rem;
+                color: var(--dark-color);
+                cursor: pointer;
+                padding: 8px;
+                display: none; /* Hidden by default on desktop */
+                line-height: 1;
+            }
+            
+            .mobile-menu-btn:hover {
+                color: var(--primary-color);
+            }
+            
             /* Mobile Menu */
             .mobile-menu {
                 position: absolute;
@@ -134,7 +188,7 @@ function loadNavbar() {
                 opacity: 0;
                 visibility: hidden;
                 transition: all 0.3s ease;
-                z-index: 1000;
+                z-index: 999;
             }
             
             .mobile-menu.show {
@@ -156,6 +210,7 @@ function loadNavbar() {
                 border-bottom: 1px solid var(--light-gray);
                 text-align: center;
                 text-decoration: none;
+                font-size: 1.1rem;
             }
             
             .mobile-link:last-child {
@@ -168,45 +223,32 @@ function loadNavbar() {
                 margin: 10px 0;
             }
             
-            .mobile-menu-btn {
-                background: none;
-                border: none;
-                font-size: 1.5rem;
-                color: var(--dark-color);
-                cursor: pointer;
-                padding: 8px;
-                display: none;
+            .btn-block {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 12px;
             }
             
-            .mobile-menu-btn:hover {
-                color: var(--primary-color);
-            }
-            
-            /* Responsive */
-            @media (max-width: 1100px) {
-                .nav-link {
-                    padding: 8px 12px;
-                    margin: 0 4px;
-                }
-                
-                .nav-separator {
-                    margin: 0 16px;
-                }
-            }
-            
+            /* Responsive - Mobile Styles */
             @media (max-width: 992px) {
                 .nav-links {
-                    display: none;
+                    display: none !important; /* Hide desktop nav on mobile */
                 }
                 
                 .mobile-menu-btn {
-                    display: block;
+                    display: block !important; /* Show mobile button on mobile */
                 }
             }
             
-            @media (min-width: 993px) {
-                .mobile-menu {
-                    display: none !important;
+            /* Small mobile adjustments */
+            @media (max-width: 480px) {
+                .logo-text {
+                    font-size: 1.1rem;
+                }
+                
+                .logo i {
+                    font-size: 1.3rem;
                 }
             }
         </style>
@@ -220,51 +262,52 @@ function loadNavbar() {
 }
 
 function initializeMobileMenu() {
-    const navbarContainer = document.getElementById('navbar-container');
-    const mobileMenuBtn = navbarContainer.querySelector('.mobile-menu-btn');
-    const mobileMenu = navbarContainer.querySelector('.mobile-menu');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
     
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            mobileMenu.classList.toggle('show');
-            
-            // Toggle icon
-            const icon = mobileMenuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('show')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
+    if (!mobileMenuBtn || !mobileMenu) return;
+    
+    // Toggle menu on button click
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                mobileMenu.classList.remove('show');
-                const icon = mobileMenuBtn.querySelector('i');
-                if (icon) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            }
-        });
+        const isOpen = mobileMenu.classList.contains('show');
         
-        // Close menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('show');
-                const icon = mobileMenuBtn.querySelector('i');
-                if (icon) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
+        if (!isOpen) {
+            // Open menu
+            mobileMenu.classList.add('show');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+        } else {
+            // Close menu
+            mobileMenu.classList.remove('show');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.remove('show');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+    });
+    
+    // Close menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('show');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
         });
-    }
+    });
+    
+    // Handle window resize - close menu when going to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            mobileMenu.classList.remove('show');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+    });
 }
 
 function initializeNavLinks() {
@@ -328,12 +371,4 @@ function handleInitialHash() {
             }, 300);
         }
     }
-}
-
-// Export for testing
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        initializeNavLinks,
-        handleInitialHash
-    };
 }
