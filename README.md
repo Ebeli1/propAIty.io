@@ -1,8 +1,10 @@
-🏠 propAIty.io
-AI-Powered Real Estate Marketplace
+#🏠 propAIty.io
 
-📋 Table of Contents
-Overview
+#AI-Powered Real Estate Marketplace
+
+#📋 Table of Contents
+
+#Overview
 
 Vision & Mission
 
