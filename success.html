@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted - propAIty.io</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+    
+    <main class="success-page">
+        <!-- Success Hero -->
+        <section class="success-hero">
+            <div class="container">
+                <div class="success-content">
+                    <!-- Back Link - ADD THIS -->
+                       <a href="index.html" class="back-link">
+                         <i class="fas fa-arrow-left"></i> Back to Home
+                      </a>
+                    <!-- Success Icon -->
+                    <div class="success-icon-animated">
+                        <div class="icon-circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="pulse-ring ring-1"></div>
+                        <div class="pulse-ring ring-2"></div>
+                        <div class="pulse-ring ring-3"></div>
+                    </div>
+                    <!-- Success Message -->
+                    <h1 class="success-title">Application Submitted!</h1>
+                    <p class="success-subtitle">Thank you for joining propAIty.io. Your journey to smarter real estate begins now.</p>
+                    
+                    <!-- Status Card -->
+                    <div class="status-card">
+                        <div class="status-header">
+                            <h3><i class="fas fa-clipboard-check"></i> Application Status</h3>
+                            <span class="status-badge status-pending">Under Review</span>
+                        </div>
+                        
+                        <div class="status-timeline">
+                            <div class="timeline-step active">
+                                <div class="step-dot"></div>
+                                <div class="step-content">
+                                    <h4>Application Submitted</h4>
+                                    <p class="step-time">Just now</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-dot"></div>
+                                <div class="step-content">
+                                    <h4>Email Verification</h4>
+                                    <p>Check your inbox for verification link</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-dot"></div>
+                                <div class="step-content">
+                                    <h4>Profile Review</h4>
+                                    <p>Our team will review your application within 24-48 hours</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-dot"></div>
+                                <div class="step-content">
+                                    <h4>Onboarding Call</h4>
+                                    <p>Schedule a quick call to get started</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-dot"></div>
+                                <div class="step-content">
+                                    <h4>Platform Access</h4>
+                                    <p>Full access to propAIty.io dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="status-actions">
+                            <a href="mailto:" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i> Check Email
+                            </a>
+                            <button id="copyEmailBtn" class="btn btn-secondary">
+                                <i class="fas fa-copy"></i> Copy Support Email
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Next Steps -->
+                    <div class="next-steps">
+                        <h2>What Happens Next?</h2>
+                        <div class="steps-grid">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <h3>Verify Your Email</h3>
+                                <p>Check your inbox for a verification link. This helps us secure your account.</p>
+                                <div class="step-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Can't find the email? Check your spam folder.</span>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <h3>Complete Your Profile</h3>
+                                <p>Once verified, log in to complete your professional profile and preferences.</p>
+                                <div class="step-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>A complete profile gets 3x more matches.</span>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <h3>Get Early Access</h3>
+                                <p>As an early adopter, you'll get priority onboarding and exclusive features.</p>
+                                <div class="step-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Early access users get 6 months free premium.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Waitlist Position (if applicable) -->
+                    <div class="waitlist-card">
+                        <div class="waitlist-header">
+                            <i class="fas fa-crown"></i>
+                            <h3>Early Adopter Benefits</h3>
+                        </div>
+                        <div class="waitlist-content">
+                            <p>You're among the first <strong id="waitlistPosition">150</strong> professionals to join propAIty.io. As an early adopter, you receive:</p>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check-circle"></i> Priority platform access</li>
+                                <li><i class="fas fa-check-circle"></i> 6 months free premium features</li>
+                                <li><i class="fas fa-check-circle"></i> Direct line to our support team</li>
+                                <li><i class="fas fa-check-circle"></i> Influence on future features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="success-actions">
+                        <a href="index.html" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-home"></i> Back to Homepage
+                        </a>
+                        <a href="login.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-sign-in-alt"></i> Go to Login
+                        </a>
+                    </div>
+                    
+                    <!-- Support Info -->
+                    <div class="support-info">
+                        <h3><i class="fas fa-question-circle"></i> Need Help?</h3>
+                        <p>Our support team is here to assist you. Typical response time: 2-4 hours.</p>
+                        <div class="contact-methods">
+                            <a href="mailto:support@propAIty.io" class="contact-link">
+                                <i class="fas fa-envelope"></i> support@propAIty.io
+                            </a>
+                            <a href="#" class="contact-link">
+                                <i class="fas fa-comments"></i> Live Chat (Coming Soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does verification take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most applications are reviewed within 24-48 hours. You'll receive an email notification once your account is approved.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>When will I get access to the platform?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Full platform access is granted after your application is approved and you've completed the onboarding process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I update my application information?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, once you receive login credentials, you can update your profile information at any time.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a cost to join?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, joining propAIty.io is completely free. We only charge for premium features and successful transactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/success.js"></script>
+</body>
+</html>

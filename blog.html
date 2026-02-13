@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - propAIty.io</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <main class="blog-page">
+        <!-- Blog Hero -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1>AI Real Estate Insights</h1>
+                    <p class="hero-subtitle">Expert analysis, market trends, and AI innovations in real estate</p>
+                    
+                    <div class="blog-search">
+                        <div class="search-container">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="blogSearch" placeholder="Search articles, trends, guides...">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                        <div class="search-tags">
+                            <span class="tag-label">Popular:</span>
+                            <a href="#" class="tag">AI Matching</a>
+                            <a href="#" class="tag">Market Trends</a>
+                            <a href="#" class="tag">Agent Tips</a>
+                            <a href="#" class="tag">Technology</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <span class="featured-badge">Featured</span>
+                        <h2>The Future of Real Estate: How AI is Transforming Property Transactions</h2>
+                        <p class="post-excerpt">Discover how artificial intelligence is revolutionizing the way we buy, sell, and rent properties. From intelligent matching to predictive analytics, the future is here.</p>
+                        
+                        <div class="post-meta">
+                            <div class="author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="author-info">
+                                    <span class="author-name">Alex Johnson</span>
+                                    <span class="post-date">February 20, 2024 • 8 min read</span>
+                                </div>
+                            </div>
+                            <div class="post-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Future Trends</span>
+                                <span class="tag">Technology</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Read Full Article
+                        </a>
+                    </div>
+                    
+                    <div class="featured-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                            <p>Featured Article Image</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-layout">
+                    <!-- Main Articles -->
+                    <div class="articles-section">
+                        <div class="section-header">
+                            <h2>Latest Articles</h2>
+                            <div class="filter-options">
+                                <select class="filter-select">
+                                    <option value="latest">Latest First</option>
+                                    <option value="popular">Most Popular</option>
+                                    <option value="trending">Trending</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="articles-grid">
+                            <!-- Article 1 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">Market Analysis</span>
+                                    <h3>2024 Real Estate Market Predictions: What AI Sees Coming</h3>
+                                    <p class="article-excerpt">Our AI models analyze thousands of data points to predict market trends for the coming year. Discover where the opportunities lie.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Sarah Chen</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Feb 15, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>6 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 2 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">AI Technology</span>
+                                    <h3>How Our Matching Algorithm Finds Perfect Property Matches</h3>
+                                    <p class="article-excerpt">A deep dive into the machine learning models that power our property matching system and how they learn from user preferences.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Michael Rodriguez</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Feb 10, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>10 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 3 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">Agent Resources</span>
+                                    <h3>5 Ways Agents Can Leverage AI to Close More Deals</h3>
+                                    <p class="article-excerpt">Practical tips and strategies for real estate agents to use AI tools effectively in their daily workflow and client interactions.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Emily Watson</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Feb 5, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>7 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 4 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">Security</span>
+                                    <h3>Ensuring Data Privacy in AI-Powered Real Estate Platforms</h3>
+                                    <p class="article-excerpt">How we protect user data while delivering powerful AI insights. Our commitment to security and privacy in property transactions.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Tech Team</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Jan 28, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>9 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 5 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">Product Update</span>
+                                    <h3>New Feature: Voice Search for Property Discovery</h3>
+                                    <p class="article-excerpt">Introducing our latest feature that allows users to search for properties using natural language voice commands.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Product Team</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Jan 20, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 6 -->
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <span class="category-badge">Global Trends</span>
+                                    <h3>International Real Estate Markets: AI Insights Across Borders</h3>
+                                    <p class="article-excerpt">How different markets are adopting AI technology and what we can learn from global real estate innovation.</p>
+                                    
+                                    <div class="article-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Research Team</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Jan 15, 2024</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>12 min read</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="pagination-btn disabled">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            <div class="page-numbers">
+                                <span class="page-number active">1</span>
+                                <span class="page-number">2</span>
+                                <span class="page-number">3</span>
+                                <span class="page-dots">...</span>
+                                <span class="page-number">8</span>
+                            </div>
+                            <button class="pagination-btn">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <aside class="blog-sidebar">
+                        <!-- Categories -->
+                        <div class="sidebar-widget">
+                            <h3>Categories</h3>
+                            <ul class="category-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">AI Technology</span>
+                                        <span class="category-count">12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">Market Analysis</span>
+                                        <span class="category-count">8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">Agent Resources</span>
+                                        <span class="category-count">15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">Product Updates</span>
+                                        <span class="category-count">6</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">Industry News</span>
+                                        <span class="category-count">10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="category-name">Guides & Tips</span>
+                                        <span class="category-count">7</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Newsletter -->
+                        <div class="sidebar-widget newsletter-widget">
+                            <h3>Stay Updated</h3>
+                            <p>Subscribe to our newsletter for the latest insights and updates.</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Your email address" class="form-input">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <i class="fas fa-paper-plane"></i> Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget">
+                            <h3>Popular Posts</h3>
+                            <div class="popular-posts">
+                                <div class="popular-post">
+                                    <div class="post-number">1</div>
+                                    <div class="post-content">
+                                        <h4>The AI Revolution in Real Estate</h4>
+                                        <div class="post-meta">
+                                            <span>Jan 10, 2024</span>
+                                            <span>•</span>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-post">
+                                    <div class="post-number">2</div>
+                                    <div class="post-content">
+                                        <h4>Maximizing ROI with Smart Pricing</h4>
+                                        <div class="post-meta">
+                                            <span>Dec 28, 2023</span>
+                                            <span>•</span>
+                                            <span>7 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-post">
+                                    <div class="post-number">3</div>
+                                    <div class="post-content">
+                                        <h4>Future of Property Search</h4>
+                                        <div class="post-meta">
+                                            <span>Dec 15, 2023</span>
+                                            <span>•</span>
+                                            <span>8 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tags -->
+                        <div class="sidebar-widget">
+                            <h3>Popular Tags</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">AI</a>
+                                <a href="#" class="tag">Real Estate</a>
+                                <a href="#" class="tag">Technology</a>
+                                <a href="#" class="tag">Market Trends</a>
+                                <a href="#" class="tag">Property</a>
+                                <a href="#" class="tag">Innovation</a>
+                                <a href="#" class="tag">Digital Transformation</a>
+                                <a href="#" class="tag">Smart Homes</a>
+                                <a href="#" class="tag">Investment</a>
+                                <a href="#" class="tag">Future</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-container"></div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

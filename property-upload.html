@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Property - propAIty.io</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+    
+    <main class="property-upload-page">
+        <!-- Upload Header -->
+        <section class="upload-header">
+            <div class="container">
+                <div class="upload-header-content">
+                    <div class="upload-intro">
+                        <a href="dashboard-coming-soon.html" class="back-link">
+                            <i class="fas fa-arrow-left"></i> Back to Dashboard
+                        </a>
+                        <h1>Upload Your Property</h1>
+                        <p class="subtitle">Fill in the details below. Our AI will analyze your property and start matching it with potential buyers immediately.</p>
+                        
+                        <div class="upload-progress">
+                            <div class="progress-steps">
+                                <div class="step active">
+                                    <div class="step-number">1</div>
+                                    <span class="step-label">Basic Info</span>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <span class="step-label">Details</span>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <span class="step-label">Photos</span>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <span class="step-label">Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upload-tips">
+                        <div class="tip-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>AI Matching Tips</h3>
+                            <ul class="tip-list">
+                                <li>Detailed descriptions get 3x more matches</li>
+                                <li>High-quality photos increase engagement by 70%</li>
+                                <li>Complete all fields for optimal AI matching</li>
+                                <li>Accurate pricing leads to faster sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Upload Form -->
+        <section class="upload-form-section">
+            <div class="container">
+                <form id="propertyUploadForm" class="property-upload-form">
+                    <!-- Step 1: Basic Information -->
+                    <div class="form-step active" id="step1">
+                        <h2>Basic Information</h2>
+                        <p class="step-description">Start with the essential details about your property.</p>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="propertyType" class="form-label">Property Type *</label>
+                                <select id="propertyType" name="propertyType" required class="form-input">
+                                    <option value="">Select type</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="house">House</option>
+                                    <option value="villa">Villa</option>
+                                    <option value="condo">Condominium</option>
+                                    <option value="townhouse">Townhouse</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="land">Land</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="transactionType" class="form-label">Transaction Type *</label>
+                                <select id="transactionType" name="transactionType" required class="form-input">
+                                    <option value="">Select type</option>
+                                    <option value="sale">For Sale</option>
+                                    <option value="rent">For Rent</option>
+                                    <option value="short-term">Short-term Rental</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="price" class="form-label">Price *</label>
+                                <div class="price-input">
+                                    <span class="currency">$</span>
+                                    <input type="number" id="price" name="price" required 
+                                           placeholder="e.g., 500000" class="form-input" min="0">
+                                    <select id="currency" name="currency" class="currency-select">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="GBP">GBP</option>
+                                        <option value="AED">AED</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="propertySize" class="form-label">Property Size (sq ft) *</label>
+                                <input type="number" id="propertySize" name="propertySize" required 
+                                       placeholder="e.g., 1500" class="form-input" min="0">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="form-label">Address *</label>
+                            <input type="text" id="address" name="address" required 
+                                   placeholder="Enter full address" class="form-input">
+                            <div class="form-hint">AI will use this for location-based matching</div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="city" class="form-label">City *</label>
+                                <input type="text" id="city" name="city" required 
+                                       placeholder="e.g., New York" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="state" class="form-label">State/Province</label>
+                                <input type="text" id="state" name="state" 
+                                       placeholder="e.g., NY" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zipCode" class="form-label">ZIP/Postal Code</label>
+                                <input type="text" id="zipCode" name="zipCode" 
+                                       placeholder="e.g., 10001" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country" class="form-label">Country *</label>
+                                <select id="country" name="country" required class="form-input">
+                                    <option value="">Select country</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Property Details -->
+                    <div class="form-step" id="step2">
+                        <h2>Property Details</h2>
+                        <p class="step-description">Help buyers understand what makes your property special.</p>
+                        
+                        <div class="form-group">
+                            <label for="title" class="form-label">Listing Title *</label>
+                            <input type="text" id="title" name="title" required 
+                                   placeholder="e.g., Luxury 3-Bedroom Apartment with Ocean View" 
+                                   class="form-input" maxlength="100">
+                            <div class="form-hint">Catchy titles attract more attention</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description" class="form-label">Description *</label>
+                            <textarea id="description" name="description" required 
+                                      placeholder="Describe your property in detail. Include features, amenities, neighborhood info, and what makes it special."
+                                      class="form-input" rows="6"></textarea>
+                            <div class="form-hint">Detailed descriptions improve AI matching accuracy</div>
+                            <div class="char-count">
+                                <span id="charCount">0</span> / 2000 characters
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="bedrooms" class="form-label">Bedrooms</label>
+                                <select id="bedrooms" name="bedrooms" class="form-input">
+                                    <option value="">Select</option>
+                                    <option value="0">Studio</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bathrooms" class="form-label">Bathrooms</label>
+                                <select id="bathrooms" name="bathrooms" class="form-input">
+                                    <option value="">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3+">3+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="yearBuilt" class="form-label">Year Built</label>
+                                <input type="number" id="yearBuilt" name="yearBuilt" 
+                                       placeholder="e.g., 2010" class="form-input" 
+                                       min="1800" max="2024">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parking" class="form-label">Parking Spaces</label>
+                                <select id="parking" name="parking" class="form-input">
+                                    <option value="">Select</option>
+                                    <option value="0">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4+">4+</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Amenities</label>
+                            <div class="amenities-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="pool">
+                                    <span>Swimming Pool</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="gym">
+                                    <span>Gym/Fitness Center</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="garden">
+                                    <span>Garden/Yard</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="balcony">
+                                    <span>Balcony/Terrace</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="security">
+                                    <span>24/7 Security</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="parking">
+                                    <span>Parking Garage</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="elevator">
+                                    <span>Elevator</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="furnished">
+                                    <span>Furnished</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="pet-friendly">
+                                    <span>Pet Friendly</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="amenities" value="smart-home">
+                                    <span>Smart Home</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Photos -->
+                    <div class="form-step" id="step3">
+                        <h2>Property Photos</h2>
+                        <p class="step-description">Upload high-quality photos. First photo will be the main listing image.</p>
+                        
+                        <div class="photo-upload-area" id="photoUploadArea">
+                            <div class="upload-instructions">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h3>Drag & Drop Photos Here</h3>
+                                <p>or click to browse</p>
+                                <p class="upload-note">Upload up to 20 photos (Max 5MB each, JPG or PNG)</p>
+                            </div>
+                            <input type="file" id="photoInput" accept="image/*" multiple style="display: none;">
+                        </div>
+                        
+                        <div class="uploaded-photos" id="uploadedPhotos">
+                            <!-- Photos will be added here -->
+                        </div>
+                        
+                        <div class="photo-tips">
+                            <h4><i class="fas fa-tips"></i> Photo Tips:</h4>
+                            <ul>
+                                <li>Use natural lighting for better quality</li>
+                                <li>Show all rooms and key features</li>
+                                <li>Include exterior shots and neighborhood</li>
+                                <li>First photo should be the best exterior shot</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Review & Submit -->
+                    <div class="form-step" id="step4">
+                        <h2>Review & Submit</h2>
+                        <p class="step-description">Review all information before submitting to AI matching.</p>
+                        
+                        <div class="review-summary">
+                            <div class="review-section">
+                                <h3>Basic Information</h3>
+                                <div class="review-content" id="reviewBasic">
+                                    <!-- Will be populated by JS -->
+                                </div>
+                            </div>
+                            
+                            <div class="review-section">
+                                <h3>Property Details</h3>
+                                <div class="review-content" id="reviewDetails">
+                                    <!-- Will be populated by JS -->
+                                </div>
+                            </div>
+                            
+                            <div class="review-section">
+                                <h3>Photos</h3>
+                                <div class="review-content" id="reviewPhotos">
+                                    <!-- Will be populated by JS -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                                <span>I confirm that all information provided is accurate and I have the right to list this property. I agree to the <a href="#">Listing Terms</a> and <a href="#">Privacy Policy</a>.</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="aiAnalysis" name="aiAnalysis" checked>
+                                <span>Allow AI to analyze this property for matching and market insights</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline" id="prevBtn" disabled>
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        
+                        <div class="step-indicator">
+                            Step <span id="currentStep">1</span> of 4
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" id="nextBtn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">
+                            <i class="fas fa-rocket"></i> Submit to AI Matching
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Success Modal -->
+                <div id="successModal" class="modal hidden">
+                    <div class="modal-content">
+                        <button class="modal-close" id="closeSuccessModal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="success-content">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h2>Property Listed Successfully!</h2>
+                            <p class="success-message">Your property has been submitted to our AI matching system. You'll start receiving qualified leads within 24 hours.</p>
+                            
+                            <div class="ai-analysis">
+                                <h4><i class="fas fa-brain"></i> AI Analysis Started</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Property data processed</li>
+                                    <li><i class="fas fa-sync"></i> Matching with potential buyers</li>
+                                    <li><i class="fas fa-chart-line"></i> Market analysis in progress</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="success-actions">
+                                <a href="dashboard-coming-soon.html" class="btn btn-outline">
+                                    <i class="fas fa-tachometer-alt"></i> Go to Dashboard
+                                </a>
+                                <a href="property-upload.html" class="btn btn-primary">
+                                    <i class="fas fa-plus"></i> List Another Property
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AI Benefits Section -->
+        <section class="ai-benefits">
+            <div class="container">
+                <h2>Why AI-Powered Listings Work Better</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Faster Matching</h3>
+                        <p>Our AI analyzes buyer preferences and matches your property within minutes, not weeks.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Optimal Pricing</h3>
+                        <p>AI suggests the perfect price based on market trends, location, and property features.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Qualified Leads</h3>
+                        <p>Only receive inquiries from genuinely interested, pre-qualified buyers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/property-upload.js"></script>
+</body>
+</html>

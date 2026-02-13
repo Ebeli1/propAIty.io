@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join propAIty.io - AI Real Estate Platform</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+    
+    <main class="signup-page">
+        <!-- Hero Section -->
+        <section class="signup-hero">
+            <div class="container">
+                <div class="signup-hero-content">
+                    <div class="signup-intro">
+                        <a href="index.html" class="back-link">
+                            <i class="fas fa-arrow-left"></i> Back to Home
+                        </a>
+                        <h1>Join the Future of Real Estate</h1>
+                        <p class="subtitle">Sign up as an agent, landlord, or developer to start getting AI-powered leads and faster transactions.</p>
+                        
+                        <div class="signup-stats">
+                            <div class="stat">
+                                <span class="stat-number">70%</span>
+                                <span class="stat-label">Faster Leads</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">AI Matching</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$0</span>
+                                <span class="stat-label">Upfront Cost</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="signup-form-container">
+                        <!-- Back Link - ADD THIS -->
+                         <a href="index.html" class="back-link">
+                           <i class="fas fa-arrow-left"></i> Back to Home
+                         </a>
+    
+                      <!-- Signup Form -->
+                         <form id="signupForm" class="signup-form">
+                    <!-- rest of your form -->
+                    </form>
+                    </div>
+                            <h2>Create Your Account</h2>
+                            <p class="form-subtitle">Fill in your details to get started</p>
+                            
+                            <!-- Role Selection -->
+                            <div class="form-group">
+                                <label class="form-label">I am a:</label>
+                                <div class="role-selector">
+                                    <button type="button" class="role-option active" data-role="agent">
+                                        <i class="fas fa-user-tie"></i>
+                                        <span>Agent</span>
+                                    </button>
+                                    <button type="button" class="role-option" data-role="landlord">
+                                        <i class="fas fa-building"></i>
+                                        <span>Landlord</span>
+                                    </button>
+                                    <button type="button" class="role-option" data-role="developer">
+                                        <i class="fas fa-hard-hat"></i>
+                                        <span>Developer</span>
+                                    </button>
+                                </div>
+                                <input type="hidden" id="userRole" name="role" value="agent">
+                            </div>
+                            
+                            <!-- Name Fields -->
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required 
+                                       placeholder="John Smith" class="form-input">
+                                <div class="form-error" id="nameError"></div>
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="john@example.com" class="form-input">
+                                <div class="form-error" id="emailError"></div>
+                            </div>
+                            
+                            <!-- Phone Field -->
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <div class="phone-input-group">
+                                    <select id="countryCode" name="countryCode" class="country-code">
+                                        <option value="+234">NGN +234</option>
+                                        <!--<option value="+1">🇺🇸 +1</option>
+                                        <option value="+44">🇬🇧 +44</option>
+                                        <option value="+61">🇦🇺 +61</option>
+                                        <option value="+27">🇿🇦 +27</option>
+                                        <option value="+971">🇦🇪 +971</option>-->
+                                    </select>
+                                    <input type="tel" id="phone" name="phone" required 
+                                           placeholder="800 200 4567" class="form-input phone-input">
+                                </div>
+                                <div class="form-error" id="phoneError"></div>
+                            </div>
+                            
+                            <!-- City Field -->
+                            <div class="form-group">
+                                <label for="city" class="form-label">City *</label>
+                                <input type="text" id="city" name="city" required 
+                                       placeholder="e.g., Abuja, Lagos, Port Harcourt" class="form-input">
+                                <div class="form-error" id="cityError"></div>
+                            </div>
+                            
+                            <!-- Password Field -->
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password *</label>
+                                <div class="password-input-group">
+                                    <input type="password" id="password" name="password" required 
+                                           placeholder="Create a secure password" class="form-input">
+                                    <button type="button" class="password-toggle" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="password-requirements">
+                                    <p class="req-text">Must include:</p>
+                                    <ul class="req-list">
+                                        <li class="req-item" id="req-length">8+ characters</li>
+                                        <li class="req-item" id="req-uppercase">Uppercase letter</li>
+                                        <li class="req-item" id="req-number">Number</li>
+                                        <li class="req-item" id="req-special">Special character</li>
+                                    </ul>
+                                </div>
+                                <div class="form-error" id="passwordError"></div>
+                            </div>
+                            
+                            <!-- Terms Checkbox -->
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required class="checkbox-input">
+                                <label for="terms" class="checkbox-label">
+                                    I agree to the<a href="#" class="link">Terms of Service</a>and 
+                                    <a href="#" class="link">Privacy Policy</a>I understand that I will 
+                                    receive email verification and may be contacted by the propAIty team.
+                                </label>
+                                <div class="form-error" id="termsError"></div>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                <i class="fas fa-rocket"></i> Create Account
+                            </button>
+                            
+                            <!-- Login Link -->
+                            <p class="login-link">
+                                Already have an account? <a href="login.html" class="link">Sign in here</a>
+                            </p>
+                        </form>
+                        
+                        <!-- Form Success Message (Hidden by default) -->
+                        <div id="successMessage" class="success-message hidden">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Application Submitted!</h3>
+                            <p>We've received your application and will review it shortly. Check your email for verification.</p>
+                            <a href="success.html" class="btn btn-primary">View Status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Benefits Section -->
+        <section class="signup-benefits">
+            <div class="container">
+                <h2>Why Join propAIty.io?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Get Listed First</h3>
+                        <p>Early adopters get priority onboarding and featured placement in our marketplace.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Exclusive Beta Access</h3>
+                        <p>Be among the first to test new AI features and provide feedback for rewards.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Priority Support</h3>
+                        <p>Get dedicated support during onboarding and early platform usage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trust Section -->
+        <section class="signup-trust">
+            <div class="container">
+                <h2>Your Data is Secure</h2>
+                <div class="trust-features">
+                    <div class="trust-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Bank-Level Security</h4>
+                        <p>256-bit encryption for all your data</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-lock"></i>
+                        <h4>Verified Users Only</h4>
+                        <p>All agents and landlords are manually verified</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-eye-slash"></i>
+                        <h4>No Spam</h4>
+                        <p>We never share your contact with third parties</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

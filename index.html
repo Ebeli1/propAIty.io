@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propAIty.io - AI-Powered Real Estate Marketplace</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Navigation will be loaded via JS -->
+    <div id="navbar-container"></div>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">AI-Powered Property Matching in One Platform — <span class="text-gradient">Find, Sell, Rent, and Lease Smarter.</span></h1>
+                    <p class="hero-subtitle">Replace fragmented property tools with one unified platform. Accelerate buying, selling, leasing, and short-let transactions through intelligent matching and automation.</p>
+                    <div class="hero-cta">
+                        <a href="signup.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-home"></i> List Your Property
+                        </a>
+                        <a href="signup.html?role=agent" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-user-tie"></i> Join as Agent
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        alt="Modern real estate with AI technology"
+                        class="hero-illustration-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Flow Section -->
+        <section class="ux-flow-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience the AI-Powered Property Search</h2>
+                    <p class="section-subtitle">No forms. No filters. Just natural language. See how propAIty transforms how Clients find properties.</p>
+                </div>
+                
+                <!-- Flow Navigation Tabs -->
+                <div class="flow-tabs">
+                    <button class="flow-tab active" data-step="1">
+                        <div class="tab-number">1</div>
+                        <div class="tab-content">
+                            <h3>Discovery</h3>
+                            <p>Describe what you want naturally</p>
+                        </div>
+                    </button>
+                    <button class="flow-tab" data-step="2">
+                        <div class="tab-number">2</div>
+                        <div class="tab-content">
+                            <h3>AI Processing</h3>
+                            <p>Intelligent understanding & matching</p>
+                        </div>
+                    </button>
+                    <button class="flow-tab" data-step="3">
+                        <div class="tab-number">3</div>
+                        <div class="tab-content">
+                            <h3>Decision Support</h3>
+                            <p>Trustworthy recommendations</p>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Flow Content -->
+                <div class="flow-content">
+                    <!-- Step 1: Discovery -->
+                    <div class="flow-step active" id="step1">
+                        <div class="step-content">
+                            <div class="step-header">
+                                <div class="step-badge">Magic Moment</div>
+                                <h2>Describe the property you want. AI will find it.</h2>
+                            </div>
+                            
+                            <div class="step-description">
+                                <p>Forget complicated forms and endless filters. Just tell our AI what you're looking for in plain English.</p>
+                                
+                                <div class="user-input-example">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="input-bubble">
+                                        <p>"2-bedroom shortlet in Lekki close to the beach, under ₦100k"</p>
+                                        <div class="input-options">
+                                            <button class="input-option">
+                                                <i class="fas fa-microphone"></i> Speak
+                                            </button>
+                                            <button class="input-option">
+                                                <i class="fas fa-keyboard"></i> Type
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-benefits">
+                                    <div class="benefit">
+                                        <i class="fas fa-comment-dots"></i>
+                                        <h4>Natural Language</h4>
+                                        <p>Speak or type like you're talking to a friend</p>
+                                    </div>
+                                    <div class="benefit">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Response</h4>
+                                        <p>No waiting for search results to load</p>
+                                    </div>
+                                    <div class="benefit">
+                                        <i class="fas fa-magic"></i>
+                                        <h4>Context Aware</h4>
+                                        <p>AI understands preferences and nuances</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-visual">
+                            <div class="phone-mockup">
+                                <div class="phone-frame">
+                                    <div class="phone-header">
+                                        <div class="phone-notch"></div>
+                                        <div class="phone-time">9:41</div>
+                                    </div>
+                                    <div class="phone-screen">
+                                        <div class="app-header">
+                                            <div class="app-logo">
+                                                <i class="fas fa-robot"></i>
+                                                <span>propAIty</span>
+                                            </div>
+                                            <div class="app-menu">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chat-interface">
+                                            <div class="welcome-message">
+                                                <div class="ai-avatar">
+                                                    <i class="fas fa-robot"></i>
+                                                </div>
+                                                <div class="message-bubble ai-bubble">
+                                                    <p>Hi! I'm your AI property assistant. What kind of property are you looking for?</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="user-message">
+                                                <div class="message-bubble user-bubble">
+                                                    <p>2-bedroom shortlet in Lekki close to the beach, under ₦100k</p>
+                                                </div>
+                                                <div class="user-avatar">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="ai-typing">
+                                                <div class="ai-avatar">
+                                                    <i class="fas fa-robot"></i>
+                                                </div>
+                                                <div class="typing-indicator">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: AI Processing -->
+                    <div class="flow-step" id="step2">
+                        <div class="step-content">
+                            <div class="step-header">
+                                <div class="step-badge">Intelligent Analysis</div>
+                                <h2>AI understands every detail of your request</h2>
+                            </div>
+                            
+                            <div class="step-description">
+                                <p>Our sophisticated AI analyzes your request in milliseconds, understanding context, preferences, and intent.</p>
+                                
+                                <div class="ai-analysis-grid">
+                                    <div class="analysis-item">
+                                        <div class="analysis-icon intent">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="analysis-content">
+                                            <h4>Intent Identified</h4>
+                                            <p><strong>Short-term Rental</strong><br>Looking for temporary accommodation</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="analysis-item">
+                                        <div class="analysis-icon location">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="analysis-content">
+                                            <h4>Location Analyzed</h4>
+                                            <p><strong>Lekki, Lagos</strong><br>Proximity to beach prioritized</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="analysis-item">
+                                        <div class="analysis-icon budget">
+                                            <i class="fas fa-tag"></i>
+                                        </div>
+                                        <div class="analysis-content">
+                                            <h4>Budget Filtered</h4>
+                                            <p><strong>Under ₦100,000</strong><br>Price range automatically set</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="analysis-item">
+                                        <div class="analysis-icon matching">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <div class="analysis-content">
+                                            <h4>Real-time Matching</h4>
+                                            <p><strong>Scanning database</strong><br>Finding perfect matches</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="processing-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">50ms</div>
+                                        <div class="stat-label">Analysis Time</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">1000+</div>
+                                        <div class="stat-label">Properties Scanned</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">AI</div>
+                                        <div class="stat-label">Powered Matching</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-visual">
+                            <div class="processing-visualization">
+                                <div class="brain-animation">
+                                    <div class="brain-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="neural-connections">
+                                        <div class="connection"></div>
+                                        <div class="connection"></div>
+                                        <div class="connection"></div>
+                                        <div class="connection"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="data-flow">
+                                    <div class="data-node">
+                                        <i class="fas fa-comment"></i>
+                                        <span>User Request</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="data-node">
+                                        <i class="fas fa-cogs"></i>
+                                        <span>AI Processing</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="data-node">
+                                        <i class="fas fa-database"></i>
+                                        <span>Property Database</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="data-node">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Top 5 Matches</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="match-percentage">
+                                    <div class="percentage-circle">
+                                        <div class="circle-bg"></div>
+                                        <div class="circle-fill" style="--percentage: 95%"></div>
+                                        <div class="percentage-text">95%</div>
+                                    </div>
+                                    <p>Average match accuracy across all queries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Decision Support -->
+                    <div class="flow-step" id="step3">
+                        <div class="step-content">
+                            <div class="step-header">
+                                <div class="step-badge">Trust & Transparency</div>
+                                <h2>Clear, trustworthy recommendations with full transparency</h2>
+                            </div>
+                            
+                            <div class="step-description">
+                                <p>Get ranked recommendations with clear explanations of why each property matches your criteria.</p>
+                                
+                                <div class="recommendation-features">
+                                    <div class="feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-percentage"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Match Percentage</h4>
+                                            <p>See exactly how well each property matches your requirements</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>"Why Recommended"</h4>
+                                            <p>AI explains why each property was selected for you</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Price & Location Analysis</h4>
+                                            <p>Compare prices and locations at a glance</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-badge-check"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Agent Credibility</h4>
+                                            <p>Verified agents with ratings and reviews</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-visual">
+                            <div class="results-mockup">
+                                <div class="results-header">
+                                    <h3>Top 5 Matches for You</h3>
+                                    <p>Sorted by relevance</p>
+                                </div>
+                                
+                                <div class="property-card featured">
+                                    <div class="property-badge">
+                                        <span class="match-badge">95% Match</span>
+                                        <span class="featured-badge">Best Match</span>
+                                    </div>
+                                    
+                                    <div class="property-image">
+                                        <div class="image-placeholder">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="property-details">
+                                        <h4>Modern 2BR Shortlet near Lekki Beach</h4>
+                                        
+                                        <div class="property-meta">
+                                            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                                            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                                            <span><i class="fas fa-ruler"></i> 1200 sq ft</span>
+                                        </div>
+                                        
+                                        <div class="property-price">
+                                            <strong>₦85,000</strong> / night
+                                            <span class="price-note">Within your budget</span>
+                                        </div>
+                                        
+                                        <div class="property-location">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>5 min walk to Lekki Beach</span>
+                                        </div>
+                                        
+                                        <div class="why-recommended">
+                                            <h5><i class="fas fa-check-circle"></i> Why Recommended:</h5>
+                                            <ul>
+                                                <li>Perfect match for beach proximity</li>
+                                                <li>25% below your max budget</li>
+                                                <li>High-rated verified host</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="agent-info">
+                                            <div class="agent-avatar">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <div class="agent-details">
+                                                <strong>Verified Agent</strong>
+                                                <div class="agent-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span>4.7 (42 reviews)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="results-cta">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-eye"></i> View All 5 Matches
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Flow Navigation Arrows -->
+                <div class="flow-navigation">
+                    <button class="nav-arrow prev-arrow" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Previous</span>
+                    </button>
+                    
+                    <div class="step-dots">
+                        <button class="step-dot active" data-step="1"></button>
+                        <button class="step-dot" data-step="2"></button>
+                        <button class="step-dot" data-step="3"></button>
+                    </div>
+                    
+                    <button class="nav-arrow next-arrow">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="section how-it-works" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>List Properties</h3>
+                        <p>Upload your properties with detailed information. Our AI analyzes every detail to understand your exact requirements.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Matches Buyers</h3>
+                        <p>Our intelligent system analyzes buyer behavior, preferences, and history to find perfect matches in real-time.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Get Qualified Leads</h3>
+                        <p>Receive pre-vetted, interested leads directly. No time wasted on unqualified inquiries or endless showings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why PropAIty Section -->
+        <section class="section why-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose propAIty</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Faster Leads</h3>
+                        <p>Reduce time-to-lead by 70% with our AI-powered matching engine that works 24/7.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>No Wasted Inspections</h3>
+                        <p>Only show to serious, pre-qualified buyers who match your property criteria perfectly.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Pay for Real Interest</h3>
+                        <p>Transparent pricing. Pay only when we deliver genuine, interested leads to you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who It's For Section -->
+        <section class="section for-section">
+            <div class="container">
+                <h2 class="section-title">Who It's For</h2>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Agents</h3>
+                        <p>Scale your business with AI-powered lead generation and automated matching.</p>
+                        <a href="signup.html?role=agent" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Landlords</h3>
+                        <p>Find perfect tenants faster with automated screening and intelligent matching.</p>
+                        <a href="signup.html?role=landlord" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3>Developers</h3>
+                        <p>Move inventory faster with predictive analytics and targeted buyer matching.</p>
+                        <a href="signup.html?role=developer" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Teaser Section -->
+        <section class="section pricing-section" id="pricing">
+            <div class="container">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Pay-per-lead</h3>
+                        <p class="price">Only when we deliver</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Verified buyer leads</li>
+                            <li><i class="fas fa-check"></i> AI-powered matching</li>
+                            <li><i class="fas fa-check"></i> No minimum commitment</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="featured-badge">Popular</div>
+                        <h3>Featured Listings</h3>
+                        <p class="price">Priority visibility</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Top search results</li>
+                            <li><i class="fas fa-check"></i> 3x more views</li>
+                            <li><i class="fas fa-check"></i> AI recommendation boost</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>No Lock-in</h3>
+                        <p class="price">Cancel anytime</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Month-to-month</li>
+                            <li><i class="fas fa-check"></i> No hidden fees</li>
+                            <li><i class="fas fa-check"></i> Full data ownership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals Section -->
+        <section class="section trust-section" id="trust">
+            <div class="container">
+                <h2 class="section-title">Built on Trust</h2>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verified Listings</h3>
+                        <p>Every property undergoes verification to ensure accuracy and legitimacy.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Assisted Matching</h3>
+                        <p>Sophisticated algorithms that learn and improve with every transaction.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Admin Review</h3>
+                        <p>Every agent and landlord is manually verified by our team for quality control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Real Estate Business?</h2>
+                <p>Join the future of real estate today. No commitment, just results.</p>
+                <a href="signup.html" class="btn btn-primary btn-xl">
+                    <i class="fas fa-rocket"></i> Get Started Free
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be loaded via JS -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/ux-flow.js"></script>
+</body>
+</html>

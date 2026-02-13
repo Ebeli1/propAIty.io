@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Login - propAIty.io</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+    
+    <main class="login-page">
+        <!-- Login Hero -->
+        <section class="login-hero">
+            <div class="container">
+                <div class="login-content">
+                    <!-- Left Column: Login Form -->
+                    <div class="login-form-container">
+                        <!-- Back Link -->
+                        <a href="index.html" class="back-link">
+                            <i class="fas fa-arrow-left"></i> Back to Home
+                        </a>
+                        
+                        <!-- Login Form -->
+                        <form id="loginForm" class="login-form">
+                            <div class="form-header">
+                                <h1>Agent Login</h1>
+                                <p class="form-subtitle">Access your propAIty.io dashboard</p>
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="loginEmail" class="form-label">Email Address *</label>
+                                <input type="email" id="loginEmail" name="email" required 
+                                       placeholder="agent@example.com" class="form-input">
+                                <div class="form-error" id="emailError"></div>
+                            </div>
+                            
+                            <!-- Password Field -->
+                            <div class="form-group">
+                                <label for="loginPassword" class="form-label">Password *</label>
+                                <div class="password-input-group">
+                                    <input type="password" id="loginPassword" name="password" required 
+                                           placeholder="Enter your password" class="form-input">
+                                    <button type="button" class="password-toggle" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="form-error" id="passwordError"></div>
+                            </div>
+                            
+                            <!-- Remember Me & Forgot Password -->
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember" name="remember" class="checkbox-input">
+                                    <label for="remember" class="checkbox-label">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-block" id="loginBtn">
+                                <i class="fas fa-sign-in-alt"></i> Sign In
+                            </button>
+                            
+                            <!-- Divider -->
+                            <div class="divider">
+                                <span>or</span>
+                            </div>
+                            
+                            <!-- Alternative Login Options -->
+                            <div class="alternative-login">
+                                <button type="button" class="btn btn-outline btn-block" id="demoLoginBtn">
+                                    <i class="fas fa-magic"></i> Try Demo Account
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-block" id="googleLoginBtn">
+                                    <i class="fab fa-google"></i> Sign in with Google
+                                </button>
+                            </div>
+                            
+                            <!-- Sign Up Link -->
+                            <p class="signup-link">
+                                Not an agent yet? <a href="signup.html" class="link">Apply to join propAIty</a>
+                            </p>
+                        </form>
+                        
+                        <!-- Login Success Message (Hidden) -->
+                        <div id="loginSuccess" class="login-success hidden">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Login Successful!</h3>
+                            <p>Redirecting you to your dashboard...</p>
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Forgot Password Modal (Hidden) -->
+                        <div id="forgotPasswordModal" class="forgot-password-modal hidden">
+                            <div class="modal-content">
+                                <button class="modal-close" id="closeModal">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <h3>Reset Your Password</h3>
+                                <p>Enter your email address and we'll send you a link to reset your password.</p>
+                                <div class="form-group">
+                                    <label for="resetEmail" class="form-label">Email Address</label>
+                                    <input type="email" id="resetEmail" class="form-input" 
+                                           placeholder="agent@example.com">
+                                    <div class="form-error" id="resetEmailError"></div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block" id="sendResetBtn">
+                                    <i class="fas fa-paper-plane"></i> Send Reset Link
+                                </button>
+                                <p class="modal-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    Check your spam folder if you don't receive the email within 5 minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Features & Info -->
+                    <div class="login-info">
+                        <div class="info-card">
+                            <div class="info-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <h2>Secure Agent Portal</h2>
+                            </div>
+                            <p class="info-description">
+                                Access your personalized dashboard with AI-powered insights, property management tools, and transaction tracking.
+                            </p>
+                            
+                            <div class="features-list">
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>AI Analytics Dashboard</h4>
+                                        <p>Real-time insights on property performance and market trends.</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Quick Property Upload</h4>
+                                        <p>Upload and manage properties in minutes with our smart forms.</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Lead Management</h4>
+                                        <p>Track and follow up with qualified leads from our AI matching system.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-stats">
+                                <div class="stat">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">AI Monitoring</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">256-bit</span>
+                                    <span class="stat-label">Encryption</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Coming Soon Section -->
+                        <div class="coming-soon">
+                            <div class="coming-soon-header">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Coming Soon</h3>
+                            </div>
+                            <ul class="coming-soon-list">
+                                <li><i class="fas fa-check-circle"></i> Mobile App Access</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced AI Predictions</li>
+                                <li><i class="fas fa-check-circle"></i> Automated Document Generation</li>
+                                <li><i class="fas fa-check-circle"></i> Team Collaboration Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Security Section -->
+        <section class="security-section">
+            <div class="container">
+                <h2>Your Security is Our Priority</h2>
+                <div class="security-features">
+                    <div class="security-feature">
+                        <i class="fas fa-fingerprint"></i>
+                        <h3>Two-Factor Authentication</h3>
+                        <p>Add an extra layer of security to your account with 2FA.</p>
+                    </div>
+                    <div class="security-feature">
+                        <i class="fas fa-history"></i>
+                        <h3>Login Activity Monitoring</h3>
+                        <p>Track all login attempts and receive suspicious activity alerts.</p>
+                    </div>
+                    <div class="security-feature">
+                        <i class="fas fa-server"></i>
+                        <h3>Enterprise-Grade Infrastructure</h3>
+                        <p>Bank-level security with encrypted data transmission and storage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
