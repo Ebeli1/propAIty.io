@@ -215,27 +215,36 @@ Quick Start
 Clone the repository
 
 bash
-'git clone https://github.com/yourusername/propAIty-web.git
+
+git clone https://github.com/Ebeli1/propAIty.io-web.git
 
 cd propAIty-web
 
-Open in browser'
+Open in browser
 
 bash
+
 Option 1: Double-click index.html
+
 Option 2: Use Live Server (VS Code)
+
 Option 3: Python simple server
+
 python -m http.server 8000
+
 Then visit http://localhost:8000
 
 File structure setup
 
 bash
-# Create all necessary directories
+
+Create all necessary directories
+
 mkdir -p assets/{images,icons,logos} css js/{components} js/utils
+
 Verify installation
 
-Open index.html in browser
+Open index.html in the browser
 
 Check console for errors (F12)
 
@@ -243,7 +252,9 @@ Test responsive design (Chrome DevTools)
 
 Development Setup
 bash
-# Recommended VS Code extensions
+
+Recommended VS Code extensions
+
 - Live Server
 - Prettier
 - ESLint
