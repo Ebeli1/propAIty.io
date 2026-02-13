@@ -609,10 +609,15 @@ SOFTWARE.
 propAIty.io Team
 
 Department	Email	Response Time
+
 General Inquiries	hello@propAIty.io	24 hours
+
 Technical Support	support@propAIty.io	4 hours
+
 Partnerships	partners@propAIty.io	48 hours
+
 Privacy	privacy@propAIty.io	24 hours
+
 Legal	legal@propAIty.io	48 hours
 
 # Office Location
@@ -681,7 +686,7 @@ css
     --warning-color: #f59e0b;     /* Warnings */
     
     --danger-color: #ef4444;      /* Errors, Delete */
-}
+
 
 # 📊 Performance
 
