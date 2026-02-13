@@ -125,7 +125,7 @@ Box Shadow System - Consistent depth and elevation
 
 📁 Project Structure
 
-"propAIty-web/
+propAIty-web/
 │
 
 ├── 📄 index.html                  # Landing page
@@ -200,7 +200,7 @@ Box Shadow System - Consistent depth and elevation
 │
 └── 📁 utils/
 
-    └── 📄 constants.js         # Configuration values"
+    └── 📄 constants.js         # Configuration values
 
 💻 Installation & Setup
 
@@ -215,9 +215,9 @@ Quick Start
 Clone the repository
 
 bash
-git clone https://github.com/yourusername/propAIty-web.git
-cd propAIty-web
-Open in browser
+'git clone https://github.com/yourusername/propAIty-web.git'
+'cd propAIty-web'
+'Open in browser'
 
 bash
 # Option 1: Double-click index.html
