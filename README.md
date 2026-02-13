@@ -216,7 +216,7 @@ Clone the repository
 
 bash
 
-git clone https://github.com/Ebeli1/propAIty.io-web.git
+git clone https://github.com/Ebeli1/propAIty.io
 
 cd propAIty-web
 
