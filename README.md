@@ -124,53 +124,85 @@ CSS Animations - Smooth transitions and micro-interactions
 Box Shadow System - Consistent depth and elevation
 
 📁 Project Structure
-text
+
 `propAIty-web/
 │
 ├── 📄 index.html                  # Landing page
+
 ├── 📄 signup.html                # Agent/landlord registration
+
 ├── 📄 login.html                 # Agent login portal
+
 ├── 📄 success.html              # Post-signup confirmation
+
 ├── 📄 dashboard-coming-soon.html # Agent dashboard placeholder
+
 ├── 📄 property-upload.html       # Property listing form
+
 ├── 📄 about.html                # Company information
+
 ├── 📄 contact.html              # Contact form & information
+
 ├── 📄 blog.html                 # Articles & insights
+
 ├── 📄 legal.html               # Privacy, Terms, Cookies
+
 ├── 📄 admin.html               # Admin panel (user management)
 │
 ├── 📁 assets/
+
 │   ├── 📁 images/               # Hero images, illustrations
+
 │   ├── 📁 icons/               # SVG icons
+
 │   └── 📁 logos/               # Brand assets, favicon
 │
 ├── 📁 css/
+
 │   ├── 📄 main.css             # Global styles & variables
+
 │   ├── 📄 layout.css           # Grid & spacing system
+
 │   ├── 📄 components.css       # Reusable UI components
+
 │   └── 📄 admin.css            # Admin panel specific styles
 │
 ├── 📁 js/
+
 │   ├── 📄 main.js              # Core functionality
+
 │   ├── 📄 form.js              # Signup form validation
+
 │   ├── 📄 login.js             # Login authentication
+
 │   ├── 📄 property-upload.js   # Multi-step property form
+
 │   ├── 📄 admin.js             # Admin dashboard logic
+
 │   ├── 📄 about.js             # About page animations
+
 │   ├── 📄 contact.js           # Contact form handling
+
 │   ├── 📄 blog.js              # Blog interactions
+
 │   ├── 📄 legal.js             # Legal tabs & cookies
+
 │   ├── 📄 ux-flow.js           # UX flow carousel
 │   │
 │   └── 📁 components/
+
 │       ├── 📄 navbar.js        # Responsive navigation
+
 │       ├── 📄 footer.js        # Footer with links
+
 │       └── 📄 admin-navbar.js  # Admin navigation
 │
 └── 📁 utils/
+
     └── 📄 constants.js         # Configuration values`
 
 💻 Installation & Setup
+
 Prerequisites
 Modern web browser (Chrome, Firefox, Safari, Edge)
 
