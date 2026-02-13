@@ -127,6 +127,7 @@ Box Shadow System - Consistent depth and elevation
 
 `propAIty-web/
 │
+
 ├── 📄 index.html                  # Landing page
 
 ├── 📄 signup.html                # Agent/landlord registration
