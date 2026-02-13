@@ -1,10 +1,6 @@
 🏠 propAIty.io
 AI-Powered Real Estate Marketplace
 
-https://img.shields.io/badge/License-MIT-yellow.svg
-https://img.shields.io/badge/version-1.0.0-blue.svg
-https://img.shields.io/badge/PRs-welcome-brightgreen.svg
-
 📋 Table of Contents
 Overview
 
