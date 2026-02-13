@@ -209,10 +209,10 @@ propAIty-web/
 │       ├── 📄 footer.js        # Footer with links
 
 │       └── 📄 admin-navbar.js  # Admin navigation
-│
-└── 📁 utils/
 
-    └── 📄 constants.js         # Configuration values
+└── 📁 utils/
+│    │
+     └── 📄 constants.js         # Configuration values
     
 
 # 💻 Installation & Setup
