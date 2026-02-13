@@ -8,156 +8,493 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <div id="navbar-container"></div>
     
     <main class="about-page">
-        <!-- Hero Section -->
+        <!-- 1. The Headline & Value Proposition -->
         <section class="about-hero">
             <div class="container">
                 <div class="about-hero-content">
-                    <h1>Transforming Real Estate with Artificial Intelligence</h1>
-                    <p class="hero-subtitle">We're building the future of property transactions, one intelligent match at a time.</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-count="100">0</span>
-                            <span class="stat-label">Agents Joined</span>
+                    <h1 class="gradient-text">Stop Searching. Start Conversing.</h1>
+                    <p class="hero-subtitle">propAIty.io is the AI-powered real estate assistant that understands exactly what you're looking for—through natural conversation, not complex forms.</p>
+                    
+                    <div class="problem-solution">
+                        <div class="problem-box">
+                            <div class="box-icon">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <h3>The Old Way</h3>
+                            <ul class="problem-list">
+                                <li><i class="fas fa-ban"></i> Endless filters and forms</li>
+                                <li><i class="fas fa-ban"></i> Wasted time on unqualified leads</li>
+                                <li><i class="fas fa-ban"></i> Fragmented tools and platforms</li>
+                                <li><i class="fas fa-ban"></i> Slow, manual matching</li>
+                            </ul>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="500">0</span>
-                            <span class="stat-label">Properties Listed</span>
+                        <div class="solution-box">
+                            <div class="box-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>The propAIty Way</h3>
+                            <ul class="solution-list">
+                                <li><i class="fas fa-check"></i> Just describe what you want—naturally</li>
+                                <li><i class="fas fa-check"></i> Pre-qualified, interested leads only</li>
+                                <li><i class="fas fa-check"></i> One unified AI-powered platform</li>
+                                <li><i class="fas fa-check"></i> Instant intelligent matching</li>
+                            </ul>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="1000">0</span>
-                            <span class="stat-label">Matches Made</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="99">0</span>
-                            <span class="stat-label">% Satisfaction</span>
-                        </div>
+                    </div>
+                    
+                    <div class="trust-badge">
+                        <span class="badge-item"><i class="fas fa-shield-alt"></i> 500+ Agents</span>
+                        <span class="badge-item"><i class="fas fa-building"></i> 1,000+ Properties</span>
+                        <span class="badge-item"><i class="fas fa-smile"></i> 95% Satisfaction</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Mission Section -->
-        <section class="mission-section">
+        <!-- 2. Your Brand Story -->
+        <section class="story-section">
             <div class="container">
-                <div class="mission-content">
-                    <div class="mission-text">
-                        <h2>Our Mission</h2>
-                        <p>To eliminate the friction in real estate transactions by leveraging artificial intelligence to create perfect matches between buyers, sellers, landlords, and tenants.</p>
-                        <p>We believe that finding or selling a property should be as simple as having a conversation with a trusted friend who knows exactly what you need.</p>
-                        <a href="signup.html" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> Join Our Mission
-                        </a>
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2 class="section-title-left">The Story Behind propAIty</h2>
+                        <div class="story-block">
+                            <p class="story-lead">It started with a simple frustration: watching talented real estate professionals waste hours on tools that didn't talk to each other.</p>
+                            
+                            <div class="aha-moment">
+                                <span class="moment-badge">The "Aha" Moment</span>
+                                <p>Our founder, Alex Johnson, spent 6 months helping a friend sell their property. The experience was eye-opening: 7 different platforms, 4 spreadsheets, countless emails, and still—mismatched buyers, missed opportunities, and endless inefficiency.</p>
+                                <p class="moment-quote">"There has to be a better way. What if AI could understand what buyers actually want, not just what they click on?"</p>
+                            </div>
+                            
+                            <p class="story-conclusion">That question became our mission. In 2023, we assembled a team of real estate veterans and AI specialists to build the platform we wished existed: one that understands human intent, matches with precision, and eliminates friction completely.</p>
+                        </div>
                     </div>
-                    <div class="mission-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-bullseye"></i>
-                            <p>Mission Visualization</p>
+                    <div class="story-image">
+                        <!-- You'll replace this with actual founder/team photo -->
+                        <div class="image-placeholder founder-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Founder's Story Visual</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Values Section -->
-        <section class="values-section">
-            <div class="container">
-                <h2>Our Core Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>AI-Powered Intelligence</h3>
-                        <p>We leverage cutting-edge artificial intelligence to make smarter matches and predictions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Trust & Transparency</h3>
-                        <p>Every match comes with clear explanations and verified information.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>Speed & Efficiency</h3>
-                        <p>We accelerate transactions that traditionally take weeks or months.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Community Focus</h3>
-                        <p>Building a network of verified agents, landlords, and satisfied clients.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section class="team-section">
-            <div class="container">
-                <h2>Meet Our Leadership</h2>
-                <p class="section-subtitle">The minds behind the AI revolution in real estate.</p>
                 
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-tie"></i>
+                <!-- Visual Timeline -->
+                <div class="timeline-container">
+                    <h3 class="timeline-title">Our Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2023</span>
+                                <h4>The Idea</h4>
+                                <p>Born from frustration with fragmented real estate tools</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">Early 2024</span>
+                                <h4>Team Formation</h4>
+                                <p>Gathered experts in real estate and AI technology</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">Mid 2024</span>
+                                <h4>MVP Launch</h4>
+                                <p>First version with core AI matching capabilities</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2025 & Beyond</span>
+                                <h4>Global Vision</h4>
+                                <p>Expanding AI to transform real estate worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Mission, Vision, and Values -->
+        <section class="mission-vision-section">
+            <div class="container">
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h2>Our Mission</h2>
+                        <p class="mission-statement">“Our mission is to build an AI-powered real estate assistant that understands user intent and delivers precise property and rental matches through natural conversation—faster, smarter, and without friction.”</p>
+                        <div class="mission-breakdown">
+                            <div class="breakdown-item">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Natural Conversation</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Understands Intent</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Faster & Smarter</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h2>Our Vision</h2>
+                        <p class="vision-statement">“To eliminate search and complexity from real estate by making AI conversation the new interface for property discovery.”</p>
+                        <div class="vision-future">
+                            <h4>The Future We See:</h4>
+                            <ul>
+                                <li><i class="fas fa-robot"></i> AI as your personal property assistant</li>
+                                <li><i class="fas fa-globe"></i> Global property discovery through conversation</li>
+                                <li><i class="fas fa-handshake"></i> Trust built on transparency and accuracy</li>
+                                <li><i class="fas fa-clock"></i> Transactions in days, not months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Values -->
+                <div class="values-deep">
+                    <h2 class="section-title-center">What Guides Us Every Day</h2>
+                    <div class="values-grid-deep">
+                        <div class="value-item">
+                            <div class="value-icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                                <span class="value-number">01</span>
+                            </div>
+                            <h3>AI-First Intelligence</h3>
+                            <p>We believe AI shouldn't just match keywords—it should understand what you really mean. Every interaction makes our platform smarter.</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon-wrapper">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span class="value-number">02</span>
+                            </div>
+                            <h3>Radical Transparency</h3>
+                            <p>We show you why we recommended a property, how we calculated match percentages, and exactly what happens with your data.</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon-wrapper">
+                                <i class="fas fa-users"></i>
+                                <span class="value-number">03</span>
+                            </div>
+                            <h3>Human-Centered Design</h3>
+                            <p>Technology should adapt to people, not the other way around. We build for real humans with real needs.</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon-wrapper">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="value-number">04</span>
+                            </div>
+                            <h3>Trust as Foundation</h3>
+                            <p>Every agent is verified, every listing is reviewed, and every transaction is protected. Trust isn't optional—it's essential.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. The People Behind the Scenes -->
+        <section class="team-deep-section">
+            <div class="container">
+                <h2 class="section-title-center">Meet the Minds Behind propAIty</h2>
+                <p class="team-subtitle">We're a diverse team of real estate experts, AI engineers, and designers united by a single mission: to transform how the world finds property.</p>
+                
+                <div class="team-grid-deep">
+                    <!-- Founder 1 -->
+                    <div class="team-member-card">
+                        <div class="member-photo">
+                            <!-- Replace with actual photo -->
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
                         </div>
                         <h3>Alex Johnson</h3>
-                        <p class="member-role">CEO & Founder</p>
-                        <p class="member-bio">Former real estate tech executive with 10+ years in AI applications.</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar">
-                            <i class="fas fa-code"></i>
+                        <p class="member-title">Founder & CEO</p>
+                        <p class="member-bio">10+ years in real estate tech. Previously led product at a top proptech firm. Alex started propAIty after experiencing firsthand how broken property search really is.</p>
+                        <div class="fun-fact">
+                            <i class="fas fa-star"></i>
+                            <span>Fun fact: Alex is also a certified home inspector and has toured over 500 properties personally.</span>
                         </div>
-                        <h3>Sarah Chen</h3>
-                        <p class="member-role">CTO</p>
-                        <p class="member-bio">Machine learning specialist from Stanford, previously at Google AI.</p>
                     </div>
-                    <div class="team-member">
-                        <div class="member-avatar">
-                            <i class="fas fa-chart-line"></i>
+                    
+                    <!-- Founder 2 -->
+                    <div class="team-member-card">
+                        <div class="member-photo">
+                            <!-- Replace with actual photo -->
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Dr. Sarah Chen</h3>
+                        <p class="member-title">Chief Technology Officer</p>
+                        <p class="member-bio">PhD in Machine Learning from Stanford. Former AI researcher at Google Brain. Sarah leads our AI development, ensuring our matching algorithms actually understand human intent.</p>
+                        <div class="fun-fact">
+                            <i class="fas fa-star"></i>
+                            <span>Fun fact: Sarah once built a neural network that writes poetry about houses.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="team-member-card">
+                        <div class="member-photo">
+                            <!-- Replace with actual photo -->
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                         <h3>Michael Rodriguez</h3>
-                        <p class="member-role">Head of Growth</p>
-                        <p class="member-bio">Real estate marketing expert with a track record of scaling platforms.</p>
+                        <p class="member-title">Head of Growth</p>
+                        <p class="member-bio">15 years in real estate marketing. Michael has helped scale three proptech startups from 0 to 10,000+ users. He knows what agents actually need to succeed.</p>
+                        <div class="fun-fact">
+                            <i class="fas fa-star"></i>
+                            <span>Fun fact: Michael can tell you the real estate market stats for any major US city from memory.</span>
+                        </div>
                     </div>
-                    <div class="team-member">
-                        <div class="member-avatar">
-                            <i class="fas fa-home"></i>
+                    
+                    <!-- Team Member 4 -->
+                    <div class="team-member-card">
+                        <div class="member-photo">
+                            <!-- Replace with actual photo -->
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
                         </div>
                         <h3>Emily Watson</h3>
-                        <p class="member-role">Head of Agent Relations</p>
-                        <p class="member-bio">Former top-performing real estate agent with 15 years experience.</p>
+                        <p class="member-title">Head of Agent Relations</p>
+                        <p class="member-bio">Former top-producing agent with 500+ transactions closed. Emily ensures our platform solves real problems for real agents—not just tech fantasies.</p>
+                        <div class="fun-fact">
+                            <i class="fas fa-star"></i>
+                            <span>Fun fact: Emily once sold a house in under 24 hours using nothing but a WhatsApp message.</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- 5. Social Proof & Credibility -->
+        <section class="social-proof-section">
+            <div class="container">
+                <h2 class="section-title-center">Trusted by Real Estate Professionals</h2>
+                
+                <!-- Stats Counter -->
+                <div class="stats-counter-grid">
+                    <div class="stat-counter-item">
+                        <div class="counter-number" data-count="500">0</div>
+                        <div class="counter-label">Verified Agents</div>
+                    </div>
+                    <div class="stat-counter-item">
+                        <div class="counter-number" data-count="1200">0</div>
+                        <div class="counter-label">Properties Listed</div>
+                    </div>
+                    <div class="stat-counter-item">
+                        <div class="counter-number" data-count="3000">0</div>
+                        <div class="counter-label">Successful Matches</div>
+                    </div>
+                    <div class="stat-counter-item">
+                        <div class="counter-number" data-count="95">0<small>%</small></div>
+                        <div class="counter-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"propAIty completely changed how I find buyers. I used to spend hours filtering through unqualified leads. Now, the AI sends me matches that actually want what I'm selling."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>James Okonkwo</h4>
+                                <p>Luxury Real Estate Agent, Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As a landlord managing multiple properties, finding quality tenants was always the hardest part. propAIty's AI screening is like having a full-time leasing manager."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Mensah</h4>
+                                <p>Property Investor, Accra</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The 'why recommended' feature is genius. I can see exactly why a property matches my clients, which makes closing deals so much easier. This is the future of real estate."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>David Nkosi</h4>
+                                <p>Real Estate Agent, Johannesburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="trust-badges-grid">
+                    <div class="trust-badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>GDPR Compliant</span>
+                    </div>
+                    <div class="trust-badge-item">
+                        <i class="fas fa-lock"></i>
+                        <span>256-bit Encryption</span>
+                    </div>
+                    <div class="trust-badge-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Agents</span>
+                    </div>
+                    <div class="trust-badge-item">
+                        <i class="fas fa-building"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Visuals and Multimedia (Placeholders for your media) -->
+        <section class="media-section">
+            <div class="container">
+                <h2 class="section-title-center">See propAIty in Action</h2>
+                
+                <div class="media-grid">
+                    <!-- Video Placeholder -->
+                    <div class="video-placeholder">
+                        <div class="video-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <h3>Watch Our Story (1:45)</h3>
+                            <p>Meet the team and see how propAIty works</p>
+                        </div>
+                        <!-- You'll replace this with actual video embed -->
+                        <div class="placeholder-content">
+                            <i class="fas fa-video"></i>
+                            <span>Video will be embedded here</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Office/Culture Photos Grid -->
+                    <div class="photo-grid">
+                        <div class="photo-grid-item large">
+                            <!-- Replace with actual office photo -->
+                            <div class="photo-placeholder-grid">
+                                <i class="fas fa-building"></i>
+                                <span>Office</span>
+                            </div>
+                        </div>
+                        <div class="photo-grid-item">
+                            <!-- Replace with actual team photo -->
+                            <div class="photo-placeholder-grid">
+                                <i class="fas fa-users"></i>
+                                <span>Team</span>
+                            </div>
+                        </div>
+                        <div class="photo-grid-item">
+                            <!-- Replace with actual work photo -->
+                            <div class="photo-placeholder-grid">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Work</span>
+                            </div>
+                        </div>
+                        <div class="photo-grid-item">
+                            <!-- Replace with actual event photo -->
+                            <div class="photo-placeholder-grid">
+                                <i class="fas fa-champagne-glasses"></i>
+                                <span>Events</span>
+                            </div>
+                        </div>
+                        <div class="photo-grid-item">
+                            <!-- Replace with actual culture photo -->
+                            <div class="photo-placeholder-grid">
+                                <i class="fas fa-heart"></i>
+                                <span>Culture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Podcast/Interview Links -->
+                <div class="media-links">
+                    <h3>Featured In</h3>
+                    <div class="featured-logos">
+                        <div class="featured-logo-placeholder">TechCrunch</div>
+                        <div class="featured-logo-placeholder">Forbes</div>
+                        <div class="featured-logo-placeholder">RE Tech</div>
+                        <div class="featured-logo-placeholder">PropTech</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
         <section class="about-cta">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Join the Future of Real Estate?</h2>
-                    <p>Whether you're an agent, landlord, or looking for your dream property, we're building the platform for you.</p>
+                    <h2>Ready to Experience Real Estate Without Friction?</h2>
+                    <p>Join hundreds of agents and landlords already using propAIty to find perfect matches through natural conversation.</p>
                     <div class="cta-buttons">
                         <a href="signup.html" class="btn btn-primary btn-lg">
-                            <i class="fas fa-user-plus"></i> Sign Up Free
+                            <i class="fas fa-rocket"></i> Get Started Free
                         </a>
                         <a href="contact.html" class="btn btn-outline btn-lg">
-                            <i class="fas fa-envelope"></i> Contact Us
+                            <i class="fas fa-calendar"></i> Book a Demo
                         </a>
                     </div>
+                    <p class="cta-note"><i class="fas fa-clock"></i> No credit card required • 14-day free trial</p>
                 </div>
             </div>
         </section>
