@@ -161,7 +161,9 @@ propAIty-web/
 ├── 📄 legal.html               # Privacy, Terms, Cookies
 
 ├── 📄 admin.html               # Admin panel (user management)
+
 │
+
 ├── 📁 assets/
 
 │   ├── 📁 images/               # Hero images, illustrations
@@ -169,7 +171,9 @@ propAIty-web/
 │   ├── 📁 icons/               # SVG icons
 
 │   └── 📁 logos/               # Brand assets, favicon
+
 │
+
 ├── 📁 css/
 
 │   ├── 📄 main.css             # Global styles & variables
@@ -179,7 +183,9 @@ propAIty-web/
 │   ├── 📄 components.css       # Reusable UI components
 
 │   └── 📄 admin.css            # Admin panel specific styles
+
 │
+
 ├── 📁 js/
 
 │   ├── 📄 main.js              # Core functionality
@@ -201,7 +207,9 @@ propAIty-web/
 │   ├── 📄 legal.js             # Legal tabs & cookies
 
 │   ├── 📄 ux-flow.js           # UX flow carousel
+
 │   │
+
 │   └── 📁 components/
 
 │       ├── 📄 navbar.js        # Responsive navigation
@@ -211,7 +219,9 @@ propAIty-web/
 │       └── 📄 admin-navbar.js  # Admin navigation
 
 └── 📁 utils/
-│    │
+
+│  
+   │
      └── 📄 constants.js         # Configuration values
     
 
