@@ -293,21 +293,15 @@ Agent Onboarding Flow
 
 Homepage 
     ↓
-
 Signup Page (role=agent)
     ↓
-
 Success Page (waitlist)
     ↓
-
 Email Verification (simulated)
-
     ↓
 Login Page
-
     ↓
 Property Upload (early access)
-
     ↓
 Dashboard Coming Soon
 
@@ -315,36 +309,31 @@ Buyer Discovery Flow
 
 Homepage
     ↓
-
 UX Flow Section (Discovery)
     ↓
-
 Natural Language Query
     ↓
-
 AI Processing Animation
     ↓
 Decision Support (matches)
     ↓
 Contact Agent CTA
 
+
 Admin Management Flow
 
 Admin Login (simulated)
     ↓
-
 Dashboard Overview
     ↓
-
 Review Pending Signups
     ↓
-
 Approve/Reject Users
     ↓
-
 xport Data
     ↓
 Monitor Platform
+
 
 # 🤖 AI Integration
 
