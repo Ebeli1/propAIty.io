@@ -1,8 +1,8 @@
-🏠 #propAIty.io
+🏠 propAIty.io
 
-#AI-Powered Real Estate Marketplace
+AI-Powered Real Estate Marketplace
 
-📋 #Table of Contents
+📋 Table of Contents
 
 #Overview
 
