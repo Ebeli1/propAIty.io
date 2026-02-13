@@ -58,7 +58,8 @@ Mission: Eliminate friction in real estate transactions by leveraging artificial
 
 ✨ Key Features
 
-For Agents & Brokers
+
+# For Agents & Brokers
 
 AI Property Matching - Intelligent algorithms match properties with perfect buyers
 
@@ -70,7 +71,7 @@ Quick Property Upload - List properties in minutes with smart forms
 
 Transaction Management - Track deals from offer to closing
 
-For Landlords & Developers
+# For Landlords & Developers
 
 Tenant Screening - Automated verification and matching
 
@@ -80,7 +81,7 @@ Market Intelligence - AI-powered pricing recommendations
 
 Short-let Optimization - Maximize occupancy and revenue
 
-For Buyers & Tenants
+# For Buyers & Tenants
 
 Natural Language Search - Describe what you want in plain English
 
@@ -90,7 +91,7 @@ Personalized Recommendations - "Why recommended" explanations
 
 Verified Agents - Trustworthy, rated professionals
 
-Platform Features
+# Platform Features
 
 ✅ No Subscription Lock-in - Pay only for results
 
@@ -102,7 +103,7 @@ Platform Features
 
 ✅ Responsive Design - Works on desktop, tablet, and mobile
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Frontend
 Technology	Purpose
@@ -113,7 +114,9 @@ Font Awesome 6	Icon library
 Google Fonts	Typography
 DataTables	Advanced table functionality (admin)
 jQuery	DOM manipulation (admin tables)
-Architecture
+
+# Architecture
+
 Mobile-First Design - Responsive from the ground up
 
 Component-Based - Reusable navbar, footer, and UI elements
@@ -122,7 +125,7 @@ Modular CSS - Separated into main, layout, and components
 
 Progressive Enhancement - Works on all browsers
 
-Design System
+# Design System
 
 CSS Custom Properties - Dynamic theming with variables
 
@@ -132,7 +135,7 @@ CSS Animations - Smooth transitions and micro-interactions
 
 Box Shadow System - Consistent depth and elevation
 
-📁 Project Structure
+# 📁 Project Structure
 
 propAIty-web/
 │
@@ -210,8 +213,9 @@ propAIty-web/
 └── 📁 utils/
 
     └── 📄 constants.js         # Configuration values
+    
 
-💻 Installation & Setup
+# 💻 Installation & Setup
 
 Prerequisites
 Modern web browser (Chrome, Firefox, Safari, Edge)
@@ -220,7 +224,8 @@ Code editor (VS Code recommended)
 
 Local development server (optional)
 
-Quick Start
+# Quick Start
+
 Clone the repository
 
 bash
@@ -243,7 +248,7 @@ python -m http.server 8000
 
 Then visit http://localhost:8000
 
-File structure setup
+# File structure setup
 
 bash
 
@@ -251,7 +256,7 @@ Create all necessary directories
 
 mkdir -p assets/{images,icons,logos} css js/{components} js/utils
 
-Verify installation
+# Verify installation
 
 Open index.html in the browser
 
@@ -259,7 +264,8 @@ Check console for errors (F12)
 
 Test responsive design (Chrome DevTools)
 
-Development Setup
+# Development Setup
+
 bash
 
 Recommended VS Code extensions
@@ -269,264 +275,71 @@ Recommended VS Code extensions
 - ESLint
 - CSS Peek
 - Auto Rename Tag
-📖 Usage Guide
-🌐 Marketing Site (Public)
-Homepage (index.html)
+  
 
-Hero section with value proposition
+# 🔄 User Flows
 
-UX flow showcase (Discovery → AI Processing → Decision Support)
-
-How It Works (3-step process)
-
-Why propAIty (benefits)
-
-Who It's For (Agents, Landlords, Developers)
-
-Pricing teaser
-
-Trust signals
-
-Call-to-action buttons
-
-Navigation
-
-Logo → Home
-
-How It Works → Scroll to section
-
-Pricing → Scroll to section
-
-Trust → Scroll to section
-
-Agent Login → login.html
-
-Get Started → signup.html
-
-👤 User Authentication
-Signup Flow (signup.html)
-
-Select role (Agent, Landlord, Developer)
-
-Enter personal details
-
-Create password with validation
-
-Accept terms
-
-Submit → success.html
-
-Login Flow (login.html)
-
-Enter email and password
-
-Demo credentials: demo@propAIty.io / demo123
-
-Forgot password modal
-
-Google OAuth (simulated)
-
-Success → property-upload.html
-
-Success Page (success.html)
-
-Animated confirmation
-
-Application status timeline
-
-Next steps guide
-
-Waitlist position
-
-Early adopter benefits
-
-FAQ accordion
-
-🏢 Agent Features
-Property Upload (property-upload.html)
-
-Step 1: Basic Information
-
-Property type, transaction type
-
-Price, size, address
-
-Location details
-
-Step 2: Property Details
-
-Title and description
-
-Bedrooms, bathrooms
-
-Year built, parking
-
-Amenities checklist
-
-Step 3: Photos
-
-Drag & drop upload
-
-Image preview
-
-Main photo designation
-
-Step 4: Review & Submit
-
-Summary of all information
-
-Terms agreement
-
-AI analysis consent
-
-Dashboard Placeholder (dashboard-coming-soon.html)
-
-Development progress tracker
-
-Feature preview
-
-Property upload CTA
-
-Estimated launch timeline
-
-🛡️ Admin Panel (admin.html)
-Dashboard
-
-Total signups counter
-
-Pending reviews
-
-Approved agents
-
-Conversion rate
-
-Quick actions
-
-Recent signups table
-
-User Management
-
-DataTable with sorting/filtering
-
-Status badges (Pending, Approved, Rejected)
-
-Role badges (Agent, Landlord, Developer)
-
-Bulk actions (Approve, Reject, Delete, Export)
-
-User detail modal
-
-Add user manually
-
-Export Functionality
-
-CSV export
-
-Excel export
-
-JSON export
-
-Custom field selection
-
-Date range filtering
-
-Export history
-
-📄 Content Pages
-About (about.html)
-
-Company mission
-
-Core values
-
-Leadership team
-
-Statistics counter
-
-Join CTA
-
-Contact (contact.html)
-
-Contact options
-
-Contact form with validation
-
-Office location
-
-FAQ section
-
-Business hours
-
-Blog (blog.html)
-
-Featured article
-
-Article grid with categories
-
-Search functionality
-
-Sidebar widgets
-
-Newsletter signup
-
-Tag cloud
-
-Legal (legal.html)
-
-Tabbed interface (Privacy, Terms, Cookies)
-
-Deep linking (#privacy, #terms, #cookies)
-
-Cookie preference center
-
-Responsive tables
-
-Contact information
-
-🔄 User Flows
 Agent Onboarding Flow
-text
+
 Homepage 
     ↓
+
 Signup Page (role=agent)
     ↓
+
 Success Page (waitlist)
     ↓
+
 Email Verification (simulated)
+
     ↓
 Login Page
+
     ↓
 Property Upload (early access)
+
     ↓
 Dashboard Coming Soon
+
 Buyer Discovery Flow
-text
+
 Homepage
     ↓
+
 UX Flow Section (Discovery)
     ↓
+
 Natural Language Query
     ↓
+
 AI Processing Animation
     ↓
 Decision Support (matches)
     ↓
 Contact Agent CTA
+
 Admin Management Flow
-text
+
 Admin Login (simulated)
     ↓
+
 Dashboard Overview
     ↓
+
 Review Pending Signups
     ↓
+
 Approve/Reject Users
     ↓
-Export Data
+
+xport Data
     ↓
 Monitor Platform
-🤖 AI Integration
+
+# 🤖 AI Integration
+
 Current Implementation (Simulated)
+
 The MVP includes visual demonstrations of AI capabilities:
 
 Natural Language Processing
@@ -553,10 +366,12 @@ Properties scanned counter (1000+)
 
 Match accuracy display (95%)
 
-Future Production Implementation
+# Future Production Implementation
+
 For production deployment, you'll need:
 
 javascript
+
 // Backend AI Architecture
 - Natural Language Processing (NLP)
   - Intent classification
@@ -577,7 +392,8 @@ javascript
   - Price prediction
   - Market trend analysis
   - Lead scoring
-Recommended AI Stack:
+  - 
+# Recommended AI Stack:
 
 Python - TensorFlow, PyTorch, scikit-learn
 
@@ -589,15 +405,19 @@ Database - PostgreSQL, MongoDB
 
 Vector Search - Pinecone, Weaviate
 
-👑 Admin Panel
+# 👑 Admin Panel
+
 Accessing Admin Panel
 html
+
 <!-- Direct access (demo only) -->
 /admin.html
 
 <!-- Authentication required -->
 sessionStorage.setItem('isAdmin', 'true');
-Features
+
+# Features
+
 Dashboard
 
 📊 Real-time statistics
@@ -626,10 +446,12 @@ Security
 
 📝 Audit logs (planned)
 
-🤝 Contributing
+# 🤝 Contributing
+
 We welcome contributions! Here's how you can help:
 
-Development Process
+# Development Process
+
 Fork the repository
 
 Create a feature branch
@@ -639,14 +461,15 @@ git checkout -b feature/amazing-feature
 Commit your changes
 
 bash
-git commit -m 'Add some amazing feature'
+git commit -m 'Add some amazing feature.'
 Push to branch
 
 bash
 git push origin feature/amazing-feature
 Open a Pull Request
 
-Coding Standards
+# Coding Standards
+
 HTML
 
 Use semantic elements (<section>, <article>, <nav>)
@@ -665,7 +488,7 @@ Mobile-first approach
 
 Use CSS custom properties
 
-Group related styles
+Group-related styles
 
 JavaScript
 
@@ -690,7 +513,8 @@ Responsive design tested
 
 Cross-browser compatibility checked
 
-🗺️ Roadmap
+# 🗺️ Roadmap
+
 ✅ Phase 1: MVP (Current)
 Responsive marketing website
 
@@ -706,9 +530,10 @@ Admin panel (user management)
 
 Export functionality
 
-Legal pages
+# Legal pages
 
 🚧 Phase 2: Core Platform (In Progress)
+
 Backend API development
 
 Database integration
@@ -725,7 +550,8 @@ Lead management system
 
 Payment processing
 
-🔮 Phase 3: AI Integration
+# 🔮 Phase 3: AI Integration
+
 Natural language search
 
 AI property matching
@@ -738,7 +564,8 @@ Automated valuations
 
 Chatbot assistant
 
-🌟 Phase 4: Advanced Features
+# 🌟 Phase 4: Advanced Features
+
 Mobile applications (iOS/Android)
 
 Virtual tours
@@ -751,17 +578,18 @@ International expansion
 
 API marketplace
 
-📄 License
+# 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-text
+
 MIT License
 
-Copyright (c) 2024 propAIty.io
+# Copyright (c) 2024 propAIty.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
+in the Software without restriction, including, without limitation, the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
@@ -772,11 +600,13 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-📞 Contact
+
+# 📞 Contact
+
 propAIty.io Team
 
 Department	Email	Response Time
@@ -785,9 +615,9 @@ Technical Support	support@propAIty.io	4 hours
 Partnerships	partners@propAIty.io	48 hours
 Privacy	privacy@propAIty.io	24 hours
 Legal	legal@propAIty.io	48 hours
-Office Location
 
-text
+# Office Location
+
 123 Innovation Drive
 Tech City, TC 10001
 United States
@@ -799,7 +629,8 @@ Saturday: 10:00 AM - 2:00 PM
 
 Sunday: Closed
 
-🙏 Acknowledgments
+# 🙏 Acknowledgments
+
 Unsplash - Hero image
 
 Font Awesome - Icon library
@@ -810,12 +641,12 @@ Google Fonts - Inter font family
 
 All contributors - Your support makes this possible
 
-⚡ Quick Demo
-bash
+# ⚡ Quick Demo
+
 # Test the complete flow in 60 seconds
 
 1. Open index.html
-2. Click "Get Started"
+2. Click "Get Started."
 3. Select "Agent" role
 4. Fill form (demo@propAIty.io / demo123)
 5. Submit → success.html
@@ -824,22 +655,37 @@ bash
 8. Redirect → property-upload.html
 9. Test the 4-step property upload
 10. View admin.html for user management
-🎨 Color Palette
+    
+# 🎨 Color Palette
+
 css
-:root {
+
+: root {
     --primary-color: #0066ff;    /* Trust, Professional */
+    
     --primary-dark: #0052d4;      /* Deep blue */
+    
     --secondary-color: #00c853;   /* Success, Growth */
+    
     --accent-color: #7b61ff;      /* Innovation, AI */
+    
     --dark-color: #1a202c;        /* Text primary */
+    
     --gray-color: #64748b;        /* Text secondary */
+    
     --light-gray: #e2e8f0;        /* Borders */
+    
     --light-color: #f8fafc;       /* Background */
+    
     --success-color: #10b981;     /* Positive actions */
+    
     --warning-color: #f59e0b;     /* Warnings */
+    
     --danger-color: #ef4444;      /* Errors, Delete */
 }
-📊 Performance
+
+# 📊 Performance
+
 Metric	Score
 Lighthouse Performance	95+
 First Contentful Paint	< 1.0s
@@ -847,6 +693,7 @@ Time to Interactive	< 1.5s
 Accessibility	100
 Best Practices	100
 SEO	100
+
 Built with ❤️ for the future of real estate
 
-propAIty.io — AI that finds buyers for your properties — faster.
+# propAIty.io — AI that finds buyers for your properties — faster.
