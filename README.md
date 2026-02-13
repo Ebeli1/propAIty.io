@@ -215,14 +215,16 @@ Quick Start
 Clone the repository
 
 bash
-'git clone https://github.com/yourusername/propAIty-web.git'
-'cd propAIty-web'
-'Open in browser'
+'git clone https://github.com/yourusername/propAIty-web.git
+
+cd propAIty-web
+
+Open in browser'
 
 bash
-# Option 1: Double-click index.html
-# Option 2: Use Live Server (VS Code)
-# Option 3: Python simple server
+Option 1: Double-click index.html
+Option 2: Use Live Server (VS Code)
+Option 3: Python simple server
 python -m http.server 8000
 Then visit http://localhost:8000
 
