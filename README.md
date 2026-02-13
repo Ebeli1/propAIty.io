@@ -664,7 +664,8 @@ All contributors - Your support makes this possible
 
 css
 
-: root {
+: root 
+
     --primary-color: #0066ff;    /* Trust, Professional */
     
     --primary-dark: #0052d4;      /* Deep blue */
