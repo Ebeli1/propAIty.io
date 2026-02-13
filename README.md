@@ -1,8 +1,6 @@
-# 🏠 propAIty.io
+# 🏠 propAIty.io - AI-Powered Real Estate Marketplace
 
-AI-Powered Real Estate Marketplace
-
-📋 Table of Contents
+# 📋 Table of Contents
 
 Overview
 
@@ -34,7 +32,7 @@ License
 
 Contact
 
-🎯 Overview
+# 🎯 Overview
 
 propAIty.io is a revolutionary AI-powered real estate marketplace that replaces fragmented property tools with one unified platform. We accelerate buying, selling, leasing, and short-let transactions through intelligent matching and automation.
 
@@ -42,13 +40,13 @@ The Problem: Real estate professionals juggle multiple tools for listings, lead 
 
 Our Solution: A single, intelligent platform powered by artificial intelligence that understands natural language, matches properties with precision, and automates workflows—all in one place.
 
-🚀 Vision & Mission
+# 🚀 Vision & Mission
 
 Vision: To become the global standard for AI-driven real estate transactions, making property discovery and management as simple as having a conversation.
 
 Mission: Eliminate friction in real estate transactions by leveraging artificial intelligence to create perfect matches between buyers, sellers, landlords, and tenants.
 
-Core Values:
+# Core Values:
 
 🤖 AI-Powered Intelligence - Cutting-edge algorithms for smarter matches
 
